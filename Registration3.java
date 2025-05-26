@@ -90,7 +90,10 @@ public class Registration3 {
     
         JOptionPane.showMessageDialog(null,login.returnLoginStatus(loginSuccess));
    
-       
+       if (loginSuccess ){
+           quickchat1 chat = new quickchat1();
+           chat.startChat(user.Username, user.password);
+       }
 }
     }
 

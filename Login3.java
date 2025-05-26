@@ -46,10 +46,10 @@ public class Login3 {
     if(!checkUserName()){
         return "Username is incorrectly formatted,please ensure that your username contains an underscore '_'and is no more than 5 characters.";
 }
-    //
+    
     if(!checkpassword()){
         return "Password does not meet complexity requirements.";
-        
+       
 }
     if(!cellphoneNumber()){
     } else {
@@ -69,9 +69,7 @@ public class Login3 {
      }//method returns messaging for successful or failed login
      
     public String returnLoginStatus(boolean loginSuccessful){
-        
-
-        
+                
         if(loginSuccessful){
             return "Access granted your login was successful .Welcome its good to have you!";
         }else{
